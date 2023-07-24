@@ -1,0 +1,27 @@
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 100px 50px 100px;
+    .logo-header {
+        width: 210.322px;
+        height: 68px;
+    }
+    ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        li {
+            padding-left: 3.5rem;
+            a {
+                text-decoration: none;
+                color: #FF6060;
+                font-size: 1.5rem;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

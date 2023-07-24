@@ -6,7 +6,7 @@ import './header.css';
 function Header() {
   return (
     <header>
-      <Link to="/"><img src={logo} alt="Logo" /></Link>
+      <Link to="/"><img className='logo-header' src={logo} alt="Logo" /></Link>
       <nav>
         <ul>
           <li>

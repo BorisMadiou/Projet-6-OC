@@ -1,11 +1,12 @@
 import React from 'react';
-import Header from '../../components/header/Header';
+import Banner from '../../components/banner/Banner';
+import Gallery from '../../components/gallery/Gallery';
 
 function Home() {
   return (
     <div>
-      <Header />
-      {/* Autres contenus de la page d'accueil */}
+      <Banner />
+      <Gallery />
     </div>
   );
 }

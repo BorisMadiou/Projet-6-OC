@@ -1,34 +1,28 @@
- {
-    box-sizing: border-box;
-}
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 45px 100px 50px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 100px 50px 100px;
+}
+header .logo-header {
+  width: 210.322px;
+  height: 68px;
+}
+header ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+header ul li {
+  padding-left: 3.5rem;
+}
+header ul li a {
+  text-decoration: none;
+  color: #FF6060;
+  font-size: 1.5rem;
+}
+header ul li a:hover {
+  text-decoration: underline;
 }
 
-img {
-    width: 210.322px;
-    height: 68px;
-}
-
-ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    padding-left: 3.5rem;
-}
-
-li a {
-    text-decoration: none;
-    color: #FF6060;
-    font-size: 1.5rem;
-}
-
-li a:hover {
-    text-decoration: underline;
-}
+/*# sourceMappingURL=header.css.map */

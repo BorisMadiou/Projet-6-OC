@@ -1,0 +1,18 @@
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .logo-footer {
+        width: 122px;
+        height: 39.444px;
+        padding-top: 4.125rem;
+    }
+    p {
+        color: white;
+        margin: 0;
+        padding: 2rem 0 2rem 0;
+        font-size: 1.5rem;
+    }
+}
