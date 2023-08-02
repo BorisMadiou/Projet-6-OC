@@ -1,8 +1,14 @@
 .card {
     position: relative;
-    width: 21.25rem;
-    height: 21.25rem;
+    min-width: 21rem;
+    aspect-ratio: 1/1;
     border-radius: 10px;
+    transition: all 0.2s ease;
+
+    &:hover {
+        transform: scale(1.06);
+        box-shadow: (0 0 20px rgba(255, 96, 96, 0.5));;
+    }
 
     img {
         width: 100%;
@@ -27,6 +33,7 @@
         margin: 0 1.25rem 0 1.25rem;
         font-size: 1.125rem;
         z-index: 1;
+        font-family: var(--font);
         color: #ffffff;
     }
 }

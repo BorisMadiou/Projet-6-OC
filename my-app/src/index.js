@@ -1,11 +1,11 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-// import './src/styles/index.css';
+import './styles/index.css';
 import Header from './components/header/Header';
 import Home from './pages/home/Home';
 import About from './pages/about/About';
-import Lodging from './pages/lodging/Lodging.jsx';
+import Lodging from './pages/lodging/Lodging';
 import NotFound from './pages/notfound/NotFound';
 import Footer from './components/footer/Footer';
 

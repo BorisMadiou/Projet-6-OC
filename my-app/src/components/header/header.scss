@@ -1,9 +1,9 @@
 
 header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 45px 100px 50px 100px;
     .logo-header {
         width: 210.322px;
         height: 68px;
@@ -16,8 +16,10 @@ header {
             padding-left: 3.5rem;
             a {
                 text-decoration: none;
-                color: #FF6060;
+                color: var(--color-red);
                 font-size: 1.5rem;
+                font-weight: 500;
+                font-family: var(--font);
                 &:hover {
                     text-decoration: underline;
                 }

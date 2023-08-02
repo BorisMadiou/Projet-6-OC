@@ -1,13 +1,12 @@
 .banner {
   background-image: url(../../assets/images/banner-img.png);
+  margin: 3rem 0 3rem 0;
   background-position: center;
   background-size: cover;
-  width: 100%;
   height: 14rem;
   border-radius: 25px;
 }
-
-.grey {
+.banner .grey {
   width: 100%;
   height: 100%;
   border-radius: 25px;
@@ -16,9 +15,11 @@
   align-items: center;
   background-color: rgba(0, 0, 0, 0.3);
 }
-
-.banner-text {
+.banner .grey .banner-text {
+  padding: 1rem;
   font-size: 3rem;
+  font-family: var(--font);
+  font-weight: 500;
   color: white;
 }
 

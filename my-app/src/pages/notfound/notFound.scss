@@ -1,0 +1,26 @@
+.not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8.7rem 0;
+    gap: 8.7rem;
+
+    p {
+        font-family: var(--font);
+        color: var(--color-red);
+    }
+    .error-big {
+        font-size: 18rem;
+        font-weight: 700;
+    }
+    .error-small {
+        font-size: 2.25rem;
+        font-weight: 500;
+    }
+    .link {
+        font-family: var(--font);
+        color: var(--color-red);
+        font-size: 1.125rem;
+        font-weight: 500;
+    }
+}

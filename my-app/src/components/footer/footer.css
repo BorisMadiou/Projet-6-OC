@@ -1,17 +1,16 @@
 footer {
+  height: 13rem;
   background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.logo-footer {
+footer .logo-footer {
   width: 122px;
   height: 39.444px;
-  padding-top: 4.125rem;
+  margin-top: 4.125rem;
 }
-
 footer p {
   color: white;
   margin: 0;

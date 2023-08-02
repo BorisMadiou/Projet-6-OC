@@ -1,0 +1,17 @@
+.tags {
+    display: flex;
+    .tag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        min-width: 7.25rem;
+        height: 1.5rem;
+        background-color: var(--color-red);
+        margin: 1.5rem 0.75rem 1.5rem 0;
+        //padding: 0 0.75rem;
+        font-family: var(--font);
+        font-size: 0.875rem;
+        color: #FFF;
+    }
+}

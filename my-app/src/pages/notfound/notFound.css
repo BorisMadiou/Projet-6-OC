@@ -1,0 +1,27 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8.7rem 0;
+  gap: 8.7rem;
+}
+.not-found p {
+  font-family: var(--font);
+  color: var(--color-red);
+}
+.not-found .error-big {
+  font-size: 18rem;
+  font-weight: 700;
+}
+.not-found .error-small {
+  font-size: 2.25rem;
+  font-weight: 500;
+}
+.not-found .link {
+  font-family: var(--font);
+  color: var(--color-red);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=notFound.css.map */
