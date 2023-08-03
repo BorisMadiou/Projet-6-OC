@@ -1,51 +1,105 @@
-.title-host {
-    display: flex;
-    justify-content: space-between;
-    .lodging-title {
-        h1 {
-            color: #FF6060;
-            font-family: Montserrat;
-            font-weight: 500;
-            font-size: 2.25rem;
-            margin: 1.875rem 0 0 0;
-            width: 70%;
-        }
-        h3 {
-            color: #FF6060;
-            font-family: Montserrat;
-            font-weight: 500;
-            font-size: 1.125rem;
-            margin: 0.5rem 0 0 0;
-        }
-    }
-    .host {
+.lodging {
+    .title-host {
         display: flex;
-        align-items: center;
+        justify-content: space-between;
+        .lodging-title {
+            h1 {
+                color: #FF6060;
+                font-family: var(--font);
+                font-weight: 500;
+                font-size: 2.25rem;
+                margin: 1.875rem 0 0 0;
+                padding-right: 2rem;
 
-        h3{
-            color: #FF6060;
-            font-family: Montserrat;
-            font-weight: 500;
-            font-size: 1.125rem;
-            text-align: right;
-            margin-right: 1rem;
+                @media (max-width:768px) {
+                    width: 100%;
+                    margin-top: 1rem;
+                    font-size: 1.125rem;
+                    padding-right: 0;
+                }
+            }
+            h3 {
+                color: #FF6060;
+                font-family: var(--font);
+                font-weight: 500;
+                font-size: 1.125rem;
+                margin: 0.5rem 0 0 0;
+
+                @media (max-width: 768px) {
+                    font-size: 0.875rem;
+                }
+            }
         }
+        .host {
+            display: flex;
+            align-items: center;
 
-        img {
-            width: 4rem;
-            height: 4rem;
-            border-radius: 50%;
+            h3{
+                color: var(--color-red);
+                font-family: var(--font);
+                font-weight: 500;
+                font-size: 1.125rem;
+                text-align: right;
+                margin-right: 1rem;
+            }
+
+            img {
+                width: 4rem;
+                height: 4rem;
+                border-radius: 50%;
+            }
         }
     }
-}
-.tags-star {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.lodging-accordions {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 3rem;
-    gap: 6%;
+    .tags-star {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hidden{
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+    .star-host-mobile {
+        display: none;
+        
+        .host-mobile {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+            }
+
+            h3 {
+                color: var(--color-red);
+                font-family: var(--font);
+                font-weight: 500;
+                font-size: 0.75rem;
+                text-align: right;
+                margin-right: 1rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.875rem;
+        }
+    }
+    .lodging-accordions {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 3rem;
+        gap: 6%;
+
+        @media (max-width:768px) {
+            flex-direction: column;
+            gap: 1.25rem;
+            padding-bottom: 1.625rem;
+        }
+    }
 }

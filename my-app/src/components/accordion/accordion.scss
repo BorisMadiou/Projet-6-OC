@@ -12,6 +12,11 @@
         border-radius: 10px;
         height: 3.25rem;
 
+        @media (max-width:768px) {
+            height: 1.875rem;
+            border-radius: 5px;
+        }
+
         &:hover {
             cursor: pointer;
         }
@@ -19,14 +24,24 @@
         h3 {
             color: #FFF;
             font-family: var(--font);
-            font-size: 18px;
+            font-size: 1.125rem;
             font-weight: 500;
             margin-left: 0.75rem;
+
+            @media (max-width:768px) {
+                font-size: 0.875rem;
+            }
         }
 
         svg {
             margin-right: 1.25rem;
             transition: transform 0.3s ease;
+
+            @media (max-width:768px) {
+                width: 1.5rem;
+                height: 1.5rem;
+                margin-right: 0.5rem;
+            }
         }
 
         .caret-icon.rotated {
@@ -37,19 +52,23 @@
         font-family: var(--font);
         color: var(--color-red);
         background-color: var(--color-gray);
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 400;
         border-radius: 0 0 10px 10px;
         line-height: 142.6%;
         position: relative;
         top: -0.75rem;
         z-index: -1;
-        padding: 0 1.25rem 0 1.25rem;
+        padding: 0 1.25rem;
         max-height: 0;
         overflow: hidden;
         transition: all 0.3s ease;
-        
 
+        @media (max-width:768px) {
+            font-size: 0.8rem;
+            border-radius: 0 0 5px 5px;
+        }
+        
        &.opened {
         padding: 2rem 1.25rem 1.25rem 1.25rem;
         max-height: 500px;

@@ -2,4 +2,14 @@
     width: 12.25rem;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 768px) {
+        width: 6.125rem;
+    }
+
+    svg {
+        @media (max-width: 768px) {
+            height: 1.125rem;
+        }
+    }
 }

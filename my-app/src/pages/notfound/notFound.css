@@ -5,6 +5,12 @@
   padding: 8.7rem 0;
   gap: 8.7rem;
 }
+@media (max-width: 768px) {
+  .not-found {
+    gap: 7rem;
+    padding: 7rem 0;
+  }
+}
 .not-found p {
   font-family: var(--font);
   color: var(--color-red);
@@ -13,15 +19,31 @@
   font-size: 18rem;
   font-weight: 700;
 }
+@media (max-width: 768px) {
+  .not-found .error-big {
+    font-size: 6rem;
+  }
+}
 .not-found .error-small {
   font-size: 2.25rem;
   font-weight: 500;
+}
+@media (max-width: 768px) {
+  .not-found .error-small {
+    font-size: 1.25rem;
+    text-align: center;
+  }
 }
 .not-found .link {
   font-family: var(--font);
   color: var(--color-red);
   font-size: 1.125rem;
   font-weight: 500;
+}
+@media (max-width: 768px) {
+  .not-found .link {
+    font-size: 0.875rem;
+  }
 }
 
 /*# sourceMappingURL=notFound.css.map */

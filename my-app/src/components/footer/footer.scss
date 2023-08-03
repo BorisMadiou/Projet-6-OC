@@ -6,8 +6,8 @@ footer {
     justify-content: center;
     align-items: center;
     .logo-footer {
-        width: 122px;
-        height: 39.444px;
+        width: 7.625rem;
+        height: 2.5rem;
         margin-top: 4.125rem;
     }
     p {
@@ -15,5 +15,10 @@ footer {
         margin: 0;
         padding: 2rem 0 2rem 0;
         font-size: 1.5rem;
+        font-family: var(--font);
+        
+        @media (max-width:768px) {
+            font-size: 0.75rem;
+        }
     }
 }

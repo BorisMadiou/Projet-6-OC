@@ -5,4 +5,10 @@
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     gap:3.125rem;
     padding: 3.125rem;
+    @media (max-width: 768px) {
+        background-color: inherit;
+        padding: 1.5rem 0;
+        gap: 1.5rem;
+        grid-template-columns: 1fr;
+    }
 }

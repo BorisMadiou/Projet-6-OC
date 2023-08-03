@@ -10,6 +10,15 @@
         box-shadow: (0 0 20px rgba(255, 96, 96, 0.5));;
     }
 
+    @media (max-width:768px) {
+        min-width: initial;
+        aspect-ratio: 67/51;
+        &:hover {
+            transform: none;
+            box-shadow: none;
+        }
+    }
+
     img {
         width: 100%;
         height: 100%;
@@ -35,5 +44,9 @@
         z-index: 1;
         font-family: var(--font);
         color: #ffffff;
+
+        @media (max-width:768px) {
+            bottom: 0.9rem;
+        }
     }
 }

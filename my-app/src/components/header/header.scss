@@ -4,9 +4,17 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width:768px) {
+        padding-bottom: 1.5rem;
+    }
     .logo-header {
-        width: 210.322px;
-        height: 68px;
+        width: 13rem;
+        height: 4.2rem;
+
+        @media (max-width: 768px) {
+            width: 9rem;
+            height: 2.9rem;
+        }
     }
     ul {
         display: flex;
@@ -14,6 +22,11 @@ header {
         padding: 0;
         li {
             padding-left: 3.5rem;
+
+            @media (max-width: 768px) {
+                padding-left: 1rem;
+            }
+
             a {
                 text-decoration: none;
                 color: var(--color-red);
@@ -22,6 +35,14 @@ header {
                 font-family: var(--font);
                 &:hover {
                     text-decoration: underline;
+                }
+
+                @media (max-width: 768px) {
+                    text-transform: uppercase;
+                    font-size: 0.75rem;
+                    &:hover {
+                        text-decoration: none;
+                    }
                 }
             }
         }

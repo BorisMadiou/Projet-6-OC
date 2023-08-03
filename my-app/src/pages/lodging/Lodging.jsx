@@ -25,7 +25,7 @@ function Lodging() {
   }
 
   return (
-    <div>
+    <div className='lodging'>
         <Carousel images={lodging.pictures} initialIndex={0} />
         <div className='title-host'>
             <div className='lodging-title'>
@@ -33,16 +33,27 @@ function Lodging() {
                 <h3>{lodging.location}</h3>
             </div>
             <div className='host'>
-            <h3>
+            <h3 className='hidden'>
                 {lodging.host.name.split(' ')[0]} <br />
                 {lodging.host.name.split(' ')[1]}
             </h3>
-                <img src={lodging.host.picture} alt={lodging.host.name} />
+                <img className='hidden' src={lodging.host.picture} alt={lodging.host.name} />
             </div>
         </div>
         <div className='tags-star'>
             <Tags words={lodging.tags} />
-            <Rating rating={lodging.rating}/>
+            <div className='hidden'><Rating rating={lodging.rating}/>
+            </div>
+        </div>
+        <div className='star-host-mobile'>
+        <Rating rating={lodging.rating}/>
+        <div className='host-mobile'>
+          <h3 >
+            {lodging.host.name.split(' ')[0]} <br />
+            {lodging.host.name.split(' ')[1]}
+          </h3>
+          <img src={lodging.host.picture} alt={lodging.host.name} />
+        </div>
         </div>
         <div className='lodging-accordions'>
             <Accordion title="Description" content={lodging.description} />

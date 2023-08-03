@@ -4,6 +4,11 @@
     align-items: center;
     padding: 8.7rem 0;
     gap: 8.7rem;
+    
+    @media (max-width:768px) {
+        gap: 7rem;
+        padding: 7rem 0;
+    }
 
     p {
         font-family: var(--font);
@@ -12,15 +17,28 @@
     .error-big {
         font-size: 18rem;
         font-weight: 700;
+
+        @media (max-width:768px) {
+            font-size: 6rem;
+        }
     }
     .error-small {
         font-size: 2.25rem;
         font-weight: 500;
+
+        @media (max-width:768px) {
+            font-size: 1.25rem;
+            text-align: center;
+        }
     }
     .link {
         font-family: var(--font);
         color: var(--color-red);
         font-size: 1.125rem;
         font-weight: 500;
+
+        @media (max-width:768px) {
+            font-size: 0.875rem;
+        }
     }
 }

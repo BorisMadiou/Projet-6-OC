@@ -3,5 +3,15 @@
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .rating {
+    width: 6.125rem;
+  }
+}
+@media (max-width: 768px) {
+  .rating svg {
+    height: 1.125rem;
+  }
+}
 
 /*# sourceMappingURL=rating.css.map */

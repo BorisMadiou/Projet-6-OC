@@ -67,5 +67,10 @@ body {
   max-width: 1440px;
   margin: auto;
 }
+@media (max-width: 768px) {
+  body {
+    padding: 1.25rem 1.25rem 0 1.25rem;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */
