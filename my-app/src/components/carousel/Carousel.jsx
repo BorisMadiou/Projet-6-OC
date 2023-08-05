@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './carousel.css';
 
-function Carousel({ images, initialIndex }) {
+function Carousel({ images, initialIndex, title }) {
   const [currentImage, setCurrentImage] = useState(initialIndex);
 
   const nextImage = () => {
@@ -16,7 +16,7 @@ function Carousel({ images, initialIndex }) {
 
   return (
     <div className="carousel">
-      <img src={images[currentImage]} alt={`${currentImage + 1}`} />
+      <img src={images[currentImage]} alt={title} />
       {!isSingleImage && (
         <>
           <svg onClick={prevImage} className='prev-icon' xmlns="http://www.w3.org/2000/svg" width="48" height="80" viewBox="0 0 48 80" fill="none">

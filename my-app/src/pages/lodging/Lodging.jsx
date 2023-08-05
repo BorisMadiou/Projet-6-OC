@@ -26,7 +26,7 @@ function Lodging() {
 
   return (
     <div className='lodging'>
-        <Carousel images={lodging.pictures} initialIndex={0} />
+        <Carousel images={lodging.pictures} initialIndex={0} title={lodging.title}/>
         <div className='title-host'>
             <div className='lodging-title'>
                 <h1>{lodging.title}</h1>

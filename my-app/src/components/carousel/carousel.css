@@ -41,7 +41,6 @@
   }
   .carousel svg:hover {
     transform: none;
-    opacity: 0.5;
   }
 }
 .carousel .prev-icon {
